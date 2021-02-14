@@ -1,0 +1,39 @@
+// The following pattern will make this responsive:
+.table-container {
+	overflow-x: auto;
+
+	&:focus {
+		outline: 1px solid $secondary;
+		outline-offset: 2px;
+	}
+}
+
+table {
+	border-spacing: 0;
+  text-align: left;
+  width: 100%;
+
+  caption {
+  	@include set-type(3);
+		font-family: $heading-font;
+		font-weight: bold;
+		letter-spacing: 0.02em;
+		margin-bottom: 1.5rem;
+		text-align: left;
+  }
+}
+
+th,
+td {
+	@include set-type(0);
+	box-sizing: border-box;
+  border-bottom: 1px solid $grey;
+  padding: 12px 15px 11px;
+  text-align: left;
+
+  &:first-child { padding-left: 1.5rem; }
+  &:last-child { padding-right: 1.5rem; }
+}
+
+tr:first-of-type th { border-bottom: 1px solid $black; }
+th { font-weight: bold; }

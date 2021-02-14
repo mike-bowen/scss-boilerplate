@@ -1,0 +1,77 @@
+/*
+ * COLORS
+ * ========================================================
+ */
+// global
+$black: #1E1E1E;
+$grey: #F1F1F1;
+$white: #fff;
+
+$blue: #147ABD;
+$pink: #E60073;
+$yellow: #FFFF0A;
+$green: #D0F500;
+
+$primary: $blue;
+$secondary: $pink;
+
+// elements
+$code: #BF0060;
+
+$button-bg: $primary;
+$button-bg-hover: $primary;
+$button-text: $white;
+$button-text-hover: $white;
+
+$link: $secondary;
+$link-hover: $secondary;
+
+$form-bg: $grey;
+$form-label: $primary;
+$form-input-bg: $white;
+$form-input-bg-focus: $white;
+$form-input-border: $white;
+$form-input-border-focus: $secondary;
+$form-input-text: $black;
+$form-error: $secondary;
+
+
+/*
+ * FONT FAMILIES
+ * ========================================================
+ */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/ProximaNova-bold.woff);
+  font-weight: 800;
+}
+
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#approach-b
+$system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$proxima-nova: "Proxima Nova", $system;
+
+$body-font: $system;
+$heading-font: $proxima-nova;
+
+
+
+/*
+ * Layout
+ * ========================================================
+ */
+$site-width: 1000px;
+$readable-length: 65ch; // sets max width for elements to a length optimal for readability
+
+
+
+/*
+ * MEDIA QUERIES
+ * ========================================================
+ */
+ 
+// Screen sizes 
+$phone:				420px;
+$phablet:			570px;
+$tablet:			770px;
+$desktop:			960px;
+$desktop-hd:	1320px;
