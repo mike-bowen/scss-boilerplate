@@ -1,0 +1,24 @@
+/*
+ *	Root
+ * ==============================
+ */
+
+html {
+	font-size: $base-font-size;
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background-color: $body-bg;
+	color: $body-text;
+	font-family: $body-font;
+	font-size: 1rem;
+	font-weight: 500;
+	height: 100%;
+	line-height: 1.5rem;
+}
+
+main {
+	min-height: calc(100vh - 40px);
+}

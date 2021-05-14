@@ -1,0 +1,11 @@
+/*
+ *	Print view
+ * ==============================
+ */
+
+// Show href after link text in print mode
+@media print {
+  a[href^="http"]:not([href*="#{$site-url}"])::after {
+    content: " (" attr(href) ")";
+  }
+}

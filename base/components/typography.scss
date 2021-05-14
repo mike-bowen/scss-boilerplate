@@ -1,0 +1,140 @@
+/*
+ *	Root
+ * ==============================
+ *	- a
+ *	- abbr
+ *	- b, strong
+ *	- br
+ *	- dfn
+ *  - dl, dt, dd
+ *	- em
+ *	- hr
+ *	- ins
+ *	- mark
+ *	- p
+ *	- s, strike, delete
+ *	- small
+ *	- sub, sup
+ *  - ul, ol, li
+ */
+
+a {
+	color: $link;
+	transition: color 0.3s;
+
+	&:hover,
+	&:focus {
+		color: $link-hover;
+	}
+
+	&:focus {
+		outline-color: $outline;
+		outline-offset: 4px;
+	}
+}
+
+abbr,
+abbr[title] {
+	font-style: normal;
+	text-decoration: underline $info dotted;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+br { height: 1.5rem }
+
+dfn {
+	font-style: normal;
+	text-decoration: underline $info dotted;
+}
+
+dl {
+	margin: 0;
+	padding: 0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	padding-left: 3rem;
+}
+
+em {
+	font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+hr {
+	height: 1px;
+	border: none;
+	background-color: $horizontal-rule;
+	margin: 11px 0 12px; // intended to equal 1.5rem at 16px base size.
+}
+
+ins {
+	text-decoration: underline;
+}
+
+mark {
+	background-color: $highlight;
+	border-radius: 4px;
+	padding: 0 4px;
+}
+
+p {
+	margin: 0;
+}
+
+p + p {
+	margin-top: 1.5rem;
+}
+
+s,
+strike,
+del {
+	opacity: 0.5;
+	text-decoration: line-through;
+}
+
+small {
+	@include set-type('s');
+	line-height: 1.5rem;
+}
+
+sub,
+sup {
+  @include set-type('xs');
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0 0 0 40px;
+}
+
+li {
+
+}

@@ -1,0 +1,98 @@
+// used in ./components/print.scss
+$site-url: 'mysite.com';
+
+
+
+// root settings
+$base-font-size: 16px;
+$global-border-radius: 4px;
+
+
+// theme colors
+$dark-purple: #1E1A38;
+$purple: #342D62;
+$fuchsia: #FF1744;
+$orange: #FF5722;
+$mint: #00DEB1;
+
+
+// colors
+$body-bg: white;
+$body-text: black;
+
+// forms
+$form-bg: gray;
+$form-input-bg: white;
+$form-input-border: white;
+$form-input-placeholder: gray;
+$form-input-text: black;
+$form-label: white;
+
+$form-error: #ffb74d;
+$form-focus: $mint;
+
+// links & buttons
+$button-bg: $fuchsia;
+$button-bg-hover: darken($fuchsia, 10%);
+$button-text: white;
+$button-text-hover: white;
+
+$link: $fuchsia;
+$link-hover: $purple;
+
+$outline: $fuchsia;
+
+// scroll bar
+$scrollbar-thumb: $fuchsia;
+$scrollbar-track: lighten($purple, 60%);
+
+// selecting text
+$selection-text: black;
+$selection-bg: $mint;
+
+// misc
+$highlight: yellow;
+
+$horizontal-rule: black;
+
+$info: yellow;
+
+
+// https://fontawesome.com/v4.7.0/icons/
+@font-face {
+  font-display: swap;
+  font-family: "Font Awesome";
+  src: url(../fonts/fontawesome.woff);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Montserrat Black";
+  font-weight: 800;
+  src: url(../fonts/montserrat-black-webfont.woff);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Raleway Medium";
+  font-weight: 500;
+  src: url(../fonts/raleway-medium-webfont.woff);
+}
+
+// https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/#approach-b
+$system: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$body-font: 'Raleway Medium', $system;
+$heading-font: 'Montserrat Black', $system;
+$icon-font: "Font Awesome";
+
+$site-padding: 24px;
+$site-width: 1200px;
+
+// screen sizes
+// https://www.w3schools.com/howto/howto_css_media_query_breakpoints.asp
+$phone:							421px;
+$tablet-portrait:		601px;
+$tablet-landscape:	769px;
+$laptop:						993px;
+$desktop:						1201px;

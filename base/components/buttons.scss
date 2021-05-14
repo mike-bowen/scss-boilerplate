@@ -1,0 +1,81 @@
+/*
+ *	Buttons
+ * ==============================
+ *	- default: background expands on hover
+ *	- outline: no bg. outline and text is color of default button bg
+ *	- no style
+ */
+
+// default
+.button,
+button {
+	@extend .z-depth-1;
+	@include set-type(2);
+	background: $button-bg;
+	border: none;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: $button-text;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: normal;
+	padding: 16px 1.5rem;
+	position: relative;
+	text-decoration: none;
+	transition: all 0.3s;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		@extend .z-depth-2;
+		background: $button-bg-hover;
+		color: $button-text-hover;
+	}
+
+	&:focus {
+		outline-offset: 4px;
+	}
+}
+
+// remove style (make button look like a link)
+.button--link {
+	background-color: transparent;
+	border: none;
+	border-radius: none;
+	color: $link;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	padding: 0;
+	text-align: left;
+	text-decoration: underline;
+	text-transform: none;
+
+	&:hover,
+	&:focus {
+		color: $link-hover;
+		background-color: transparent;
+	}
+}
+
+.button--small {
+	@extend .button;
+	padding: 0.7rem 1rem 0.7rem;
+}
+
+// white button
+.button--white {
+	@extend .button;
+	background: white;
+	color: black;
+
+	&:hover,
+	&:focus {
+		background: rgba(white, 0.8);
+		color: black;
+	}
+}
+
+.button--small--white {
+	@extend .button--small;
+	@extend .button--white;
+}

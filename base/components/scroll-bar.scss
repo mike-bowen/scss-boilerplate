@@ -1,0 +1,24 @@
+/*
+ *	Scroll bar
+ * ==============================
+ */
+
+// firefox
+body {
+  scrollbar-width: thin;
+  scrollbar-color: $scrollbar-thumb $scrollbar-track;
+}
+
+// chrome, edge, and safari
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: $scrollbar-track;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb;
+  border-radius: 16px;
+}

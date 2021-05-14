@@ -1,0 +1,22 @@
+/*
+ *	Media
+ * ==============================
+ */
+
+// embeds
+iframe {
+	max-width: 100%;
+}
+
+// images
+img {
+  height: 100%;
+  width: 100%;
+}
+
+// figures
+figure {
+	@extend .z-depth-1;
+	margin: 3rem 0;
+	width: 100%;
+}

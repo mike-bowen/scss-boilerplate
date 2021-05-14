@@ -1,0 +1,54 @@
+/*
+ *	Mixins
+ * ==============================
+ */
+
+// set type
+// https://www.smashingmagazine.com/2019/12/ui-design-tips-speed-up-workflow/#font-sizes
+// on a scale of 0 to 8. 0 is the default size at 1rem. xs and s are also options
+@mixin set-type($scale: 0) {
+	@if($scale == 'xs') {	// 12px
+		font-size: 0.75rem;
+		line-height: 1.5rem;
+
+	} @else if($scale == 's') { // 14px
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+
+	} @else if($scale == 0) { // 16px
+		font-size: 1rem;
+		line-height: 1.5rem;
+
+	} @else if($scale == 1) { // 18px
+		font-size: 1.125rem;
+		line-height: 1.5rem;
+
+	} @else if($scale == 2) { // 20px
+		font-size: 1.25rem;
+		line-height: 1.5rem;
+
+	} @else if($scale == 3) { // 24px
+		font-size: 1.5rem;
+		line-height: 2rem;
+
+	} @else if($scale == 4) { // 30px
+		font-size: 1.875rem;
+		line-height: 2rem;
+
+	} @else if($scale == 5) { // 36px
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+
+	} @else if($scale == 6) { // 48px
+		font-size: 3rem;
+		line-height: 4rem;
+
+	} @else if($scale == 7) { // 60px
+		font-size: 3.75rem;
+		line-height: 4.5rem;
+
+	} @else if($scale == 8) { // 72px
+		font-size: 4.5rem;
+		line-height: 5.5rem;
+	}
+}

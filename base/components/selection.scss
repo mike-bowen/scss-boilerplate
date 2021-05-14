@@ -1,0 +1,16 @@
+/*
+ *	Selection color
+ * ==============================
+ */
+
+// firefox
+::-moz-selection {
+  color: $selection-text;
+  background: $selection-bg;
+}
+
+// others
+::selection {
+  color: $selection-text;
+  background: $selection-bg;
+}

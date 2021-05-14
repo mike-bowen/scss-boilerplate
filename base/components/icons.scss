@@ -1,0 +1,27 @@
+/*
+ *	Icons
+ * ==============================
+ *	<i> is used for icons
+ */
+
+i {
+	@include set-type(1);
+	display: inline-block;
+	font-family: $icon-font;
+	font-style: normal;
+	font-weight: normal;
+	transition: all 0.3s;
+}
+
+// icon classes
+// https://fontawesome.com/v4.7.0/icons/
+// i.template::before { content: "\0000" }
+
+i.nav-toggle::before 					{ content: "\f0c9"; }
+i.nav-toggle.is-open::before 	{ content: "\f00d"; }
+
+i.dribbble::before 						{ content: "\f17d"; }
+i.github::before 							{ content: "\f09b"; }
+i.linkedin::before 						{ content: "\f0e1"; }
+
+i.down-arrow::before 					{ content: "\f063"; }
