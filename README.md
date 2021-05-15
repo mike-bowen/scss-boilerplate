@@ -4,7 +4,7 @@ This is scss code that I deploy with all my custom projects. It features a base 
 
 ## Installation & Usage
 
-Download the entire package and run any of the commands in `package.json`. Run `scss:watch`, `scss:deploy`, `scss:compile-base`. The latter command compiles only base styles.
+Download the entire package and run any of the commands in `package.json`. Run `scss:watch`, `scss:deploy`, `scss:deploy-base`. The latter command compiles only base styles in a non-compressed file.
 
 ## License
 

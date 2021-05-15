@@ -1,0 +1,22 @@
+// Base
+@import 'base/_index.scss';
+
+
+// project-components
+@import 'project-components/header.scss';
+@import 'project-components/footer.scss';
+@import 'project-components/global.scss';
+
+// @import 'project-components/temlapte-parts/example.scss';
+
+// @import 'project-components/gutenberg-blocks/example.scss';
+
+
+// templates
+@import 'templates/404.scss';
+@import 'templates/archive.scss';
+@import 'templates/front-page.scss';
+@import 'templates/index.scss';
+@import 'templates/page.scss';
+@import 'templates/single.scss';
+

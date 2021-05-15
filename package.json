@@ -1,0 +1,16 @@
+{
+  "name": "scss-boilerplate",
+  "version": "0.1.0",
+  "description": "This is scss code that I deploy with all my custom projects. It features a base with some utility classes that can be compiled and dropped into a project. The other folders follow a structure that I find helpful for developing WordPress themes.",
+  "author": "Mike Bowen",
+  "homepage": "MikeBowen.me",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss:deploy": "node-sass ./scss/style.scss ./dist/style.min.css --output-style compressed",
+    "scss:watch": "node-sass ./scss/style.scss ./dist/style.css --watch",
+    "scss:deploy-base": "node-sass ./scss/base/_index.scss ./dist/base.css"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
