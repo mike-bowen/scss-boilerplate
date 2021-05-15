@@ -1,26 +1,31 @@
-This is a starter scss kit for developing custom WordPress themes.
+# SCSS Boilerplate
 
-## Directory Structure
+This is scss code that I deploy with all my custom projects. It features a base with some utility classes that can be compiled and dropped into a project. The other folders follow a structure that I find helpful for developing WordPress themes.
 
-- `config.scss` Adjust variables for colors, font families, global values, and breakpoints
-- `style.scss` @import all SCSS files here
+## Installation & Usage
 
-### Base
-This code should change very little from project to project. Ideally, this is touched at the beginning of the project and never opened again.
+Download the entire package and run any of the commands in `package.json`. Run `scss:watch`, `scss:deploy`, `scss:compile-base`. The latter command compiles only base styles.
 
-- `components/` Adjust typography, buttons, forms, the scrollbar, or anything that would be at the top of the cascade
-- `atomic.scss` Utility classes
-- `mixins.scss`
-- `normalize.scss`
+## License
 
-### Project Components
-These elements are project-specific.
+MIT License
 
-- `gutenberg-blocks` I'd recommend using the Lazy Blocks plugin ;)
-- `template-parts`
-- `footer.scss`
-- `global.scss` A bin for odd, shared classes and styles that don't belong anywhere else
-- `header.scss`
+Copyright (c) 2021 Mike Bowen
 
-### Templates
-Any templates created in the WordPress theme can be styled here.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
