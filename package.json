@@ -12,5 +12,10 @@
   },
   "devDependencies": {
     "node-sass": "^6.0.0"
-  }
+  },
+  "repository": "https://github.com/mike-bowen/scss-boilerplate",
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }]
 }
